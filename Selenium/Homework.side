@@ -1,0 +1,243 @@
+{
+  "id": "eb25fda0-aa2b-4d28-9cf7-9d493014f47e",
+  "version": "2.0",
+  "name": "Home",
+  "url": "http://automationpractice.com",
+  "tests": [{
+    "id": "a4c04e68-f23a-48d1-9240-ad593706e8a1",
+    "name": "Task 1",
+    "commands": [{
+      "id": "84a19607-79f6-49b6-83a5-eb4d1b4b69bb",
+      "comment": "",
+      "command": "open",
+      "target": "http://automationpractice.com/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e769e655-19cd-4335-9bf5-4ddd1569e8b4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x703",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39adfcdf-e69b-4d3d-9dea-d58d10c05b74",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'Sign in')]",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=.login", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/div/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://automationpractice.com/index.php?controller=my-account']", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8843d787-075b-4977-b615-b74ce30d0aef",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/div/input", "xpath:position"]
+      ],
+      "value": "vladlyschuk@gmail.com"
+    }, {
+      "id": "5b5fcedc-4012-43df-872f-c671b7275e59",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwd",
+      "targets": [
+        ["id=passwd", "id"],
+        ["name=passwd", "name"],
+        ["css=#passwd", "css:finder"],
+        ["xpath=//input[@id='passwd']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/div[2]/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "test12345"
+    }, {
+      "id": "9557a72e-4e1c-4707-bb02-01b44be678eb",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=#SubmitLogin > span",
+      "targets": [
+        ["css=#SubmitLogin > span", "css:finder"],
+        ["xpath=//button[@id='SubmitLogin']/span", "xpath:idRelative"],
+        ["xpath=//p[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9c96022-52f8-4cbd-bfd5-467d3ba55e94",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Sign out",
+      "targets": [
+        ["linkText=Sign out", "linkText"],
+        ["css=.logout", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/div/div/nav/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://automationpractice.com/index.php?mylogout=']", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign out')]", "xpath:innerText"]
+      ],
+      "value": "Sign out"
+    }, {
+      "id": "d741b090-592e-4fd6-ba8d-71abb55ed08f",
+      "comment": "",
+      "command": "open",
+      "target": "http://automationpractice.com/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa666018-48c8-4a7f-afeb-9c89b93bd04b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//a[contains(text(),'Women')]",
+      "targets": [
+        ["css=.sfHover > .sf-with-ul", "css:finder"],
+        ["xpath=//a[contains(text(),'Women')]", "xpath:link"],
+        ["xpath=//div[@id='block_top_menu']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://automationpractice.com/index.php?id_category=3&controller=category']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55cf1c7b-0048-4d72-8e41-27d3d4a9024c",
+      "comment": "",
+      "command": "clickAt",
+      "target": "xpath=//a[contains(text(),'Blouses')]",
+      "targets": [
+        ["linkText=T-shirts", "linkText"],
+        ["css=.submenu-container > .sfHover .sfHover > a", "css:finder"],
+        ["xpath=//a[contains(text(),'T-shirts')]", "xpath:link"],
+        ["xpath=//div[@id='block_top_menu']/ul/li/ul/li/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://automationpractice.com/index.php?id_category=5&controller=category']", "xpath:href"],
+        ["xpath=//li/ul/li/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'T-shirts')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7559f71-838f-4a36-a718-c31339590164",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.breadcrumb",
+      "targets": [
+        ["css=.breadcrumb", "css:finder"],
+        ["xpath=//div[@id='columns']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "> Women>Tops>Blouses"
+    }, {
+      "id": "80111d4d-a87e-41a9-8e61-4e160b95974e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.product_img_link > .replace-2x",
+      "targets": [
+        ["css=.product_img_link > .replace-2x", "css:finder"],
+        ["xpath=(//img[@alt='Blouse'])[3]", "xpath:img"],
+        ["xpath=//div[@id='center_column']/ul/li/div/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//li/div/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1505aef0-7464-47af-b053-fd24bd3063d1",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=.ajax_add_to_cart_button > span",
+      "targets": [
+        ["css=.ajax_add_to_cart_button > span", "css:finder"],
+        ["xpath=//div[@id='center_column']/ul/li/div/div[2]/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "68ab331a-3e80-4e6d-89a7-868c3c5e7aff",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='layer_cart']/div/div/span",
+      "targets": [
+        ["css=.cross", "css:finder"],
+        ["xpath=//div[@id='layer_cart']/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "259c7b7c-20da-409f-8008-245187b34712",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//header[@id='header']/div[3]/div/div/div[3]/div/a",
+      "targets": [
+        ["css=.shopping_cart > a", "css:finder"],
+        ["xpath=//header[@id='header']/div[3]/div/div/div[3]/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://automationpractice.com/index.php?controller=order']", "xpath:href"],
+        ["xpath=//div[3]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b94e71ba-a905-41d7-b008-dee0451278b2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//header[@id='header']/div[3]/div/div/div[3]/div/div/div/div/dl/dt",
+      "targets": [
+        ["css=.first_item", "css:finder"],
+        ["xpath=//header[@id='header']/div[3]/div/div/div[3]/div/div/div/div/dl/dt", "xpath:idRelative"],
+        ["xpath=//dt", "xpath:position"]
+      ],
+      "value": "1 X Blouse"
+    }, {
+      "id": "a0eb5e85-de40-4fc2-b74e-5815411fe693",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=.ajax_cart_block_remove_link",
+      "targets": [
+        ["css=.ajax_cart_block_remove_link", "css:finder"],
+        ["xpath=//header[@id='header']/div[3]/div/div/div[3]/div/div/div/div/dl/dt/span/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://automationpractice.com/index.php?controller=cart&delete%3D1%26id_product%3D%7B%24product_id_product%7D%26ipa%3D%7B%24product_id_product_attribute%7D%26id_address_delivery%3D%7B%24product_id_address_delivery%7D%26token%3D%7B%24static_token%7D=']", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,' ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "254a9898-32d8-4835-9a43-cd9123529d06",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign out",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9cedf058-f2cb-4af2-90ba-8d487900ddc6",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//a[contains(text(),'Sign in')]",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=.login", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/div/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://automationpractice.com/index.php?controller=my-account']", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": "Sign in"
+    }]
+  }],
+  "suites": [{
+    "id": "a8ad6ce1-31f5-46ae-b18e-d3bf81d6ba73",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a4c04e68-f23a-48d1-9240-ad593706e8a1"]
+  }],
+  "urls": ["http://automationpractice.com/"],
+  "plugins": []
+}
